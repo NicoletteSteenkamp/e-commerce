@@ -1,36 +1,35 @@
 import React, { useState } from 'react';
-import Sidebar from './Sidebar';
-import SearchBar from './SearchBar';
-import ProductCard from './ProductCard';
-import Cart from './Cart';
-import "./App.css";
+import Navbar from "./components/navbar";
+import SearchBar from './components/SearchBar';
+import ProductCard from './components/ProductCard';
+import Cart from './components/Cart';
+import { PRODUCTS } from './components/products'; 
+import './App.css';
 
 const App = () => {
-  const [products, setProducts] = useState([
-    { id: 1, name: 'Apple Watch', price: 529.99, image: 'apple-watch.jpg' },
-    { id: 2, name: 'Sony Headphones', price: 39.99, image: 'sony-headphones.jpg' },
-    // Add more products here
-  ]);
-
-  const [filteredProducts, setFilteredProducts] = useState(products);
+  const [filteredProducts, setFilteredProducts] = useState(PRODUCTS); 
 
   const handleSearch = (term) => {
     setFilteredProducts(
-      products.filter((product) =>
-        product.name.toLowerCase().includes(term.toLowerCase())
+      PRODUCTS.filter((product) =>
+        product.productName.toLowerCase().includes(term.toLowerCase())
       )
     );
   };
 
   return (
     <div className="app">
-      <Sidebar />
+      <Navbar />
       <div className="main-content">
         <SearchBar onSearch={handleSearch} />
         <div className="product-list">
-          {filteredProducts.map((product) => (
-            <ProductCard key={product.id} product={product} />
-          ))}
+          {filteredProducts.length === 0 ? (
+            <p>No products found</p>
+          ) : (
+            filteredProducts.map((product) => (
+              <ProductCard key={product.id} product={product} />
+            ))
+          )}
         </div>
         <Cart />
       </div>

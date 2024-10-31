@@ -1,5 +1,5 @@
-import product1Black from "./assets/Dell-XPS-13-Black.jpg";
-import product2White from "./assets/Dell-XPS-13-White.jpg";
+import product1 from "./assets/Dell-XPS-13-Black.jpg";
+import product2 from "./assets/Dell-XPS-13-White.jpg";
 import product3 from "./assets/Dell-XPS-15-Black.jpg";
 import product4 from "./assets/Headphones.png";
 import product5 from "./assets/Iphone-12-01.png";
@@ -20,96 +20,96 @@ export const PRODUCTS = [
     id: 1,
     productName: "Dell XPS 13 Black",
     price: 1200.0,
-    productImage: product1Black,
+    productImage: product1,
   },
   {
     id: 2,
     productName: "Dell XPS 13 White",
     price: 1200.0,
-    productImage: product1White,
+    productImage: product2,
   },
   {
     id: 3,
     productName: "Dell XPS 15 Black",
     price: 1500.0,
-    productImage: product2,
+    productImage: product3,
   },
   {
     id: 4,
     productName: "Headphones",
     price: 199.0,
-    productImage: product3,
+    productImage: product4,
   },
   {
     id: 5,
     productName: "iPhone 12 - Black",
     price: 999.0,
-    productImage: product4,
+    productImage: product5,
   },
   {
     id: 6,
     productName: "iPhone 12 - White",
     price: 999.0,
-    productImage: product5,
+    productImage: product6,
   },
   {
     id: 7,
     productName: "iPhone 12 - Green",
     price: 999.0,
-    productImage: product6,
+    productImage: product7,
   },
   {
     id: 8,
     productName: "iPhone 12 - Red",
     price: 999.0,
-    productImage: product7,
+    productImage: product8,
   },
   {
     id: 9,
     productName: "iPhone 12 Pro - Silver",
     price: 1099.0,
-    productImage: product8,
+    productImage: product9,
   },
   {
     id: 10,
     productName: "iPhone 12 Pro - Graphite",
     price: 1099.0,
-    productImage: product9,
+    productImage: product10,
   },
   {
     id: 11,
     productName: "iPhone 13 Pro - Gold",
     price: 1199.0,
-    productImage: product10,
+    productImage: product11,
   },
   {
     id: 12,
     productName: "iPhone 13 Pro - Blue",
     price: 1199.0,
-    productImage: product11,
+    productImage: product12,
   },
   {
     id: 13,
     productName: "iPhone 13 Pro - Black",
     price: 1199.0,
-    productImage: product12,
+    productImage: product13,
   },
   {
     id: 14,
     productName: "Samsung Galaxy S21 Pro",
     price: 899.0,
-    productImage: product13,
+    productImage: product14,
   },
   {
     id: 15,
     productName: "Samsung Galaxy S21",
     price: 799.0,
-    productImage: product14,
+    productImage: product15,
   },
   {
     id: 16,
     productName: "Smart Watch",
     price: 299.0,
-    productImage: product15,
+    productImage: product16,
   },
 ];
