@@ -1,21 +1,36 @@
 .navbar {
-    width: 100%;
-    height: 80px;
-    background-color: rgb(19, 19, 19);
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  
-  .links {
-    margin-right: 50px;
-    display: flex;
-    align-items: center;
-  }
-  
-  .links a {
-    text-decoration: none;
-    color: white;
-    margin-left: 20px;
-    font-size: 25px;
-  }
+  display: flex;
+  align-items: center;
+  padding: 10px;
+}
+
+.navbar-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60px; /* Adjust width as needed */
+  background-color: #f8f8f8; /* Sidebar background color */
+  height: 100vh; /* Full height of the viewport */
+  border-right: 1px solid #ddd;
+}
+
+.logo-image {
+  width: 40px; /* Adjust logo size as needed */
+  margin-bottom: 20px;
+}
+
+.icon-sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px; /* Space between icons */
+}
+
+.icon-sidebar svg {
+  cursor: pointer;
+  color: #333; /* Default icon color */
+}
+
+.icon-sidebar svg:hover {
+  color: #007bff; /* Icon color on hover */
+}

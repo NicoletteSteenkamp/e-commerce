@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { MagnifyingGlass } from 'phosphor-react';
-import './searchBar.css';
+import './SearchBar.css';
 
 const SearchBar = ({ onSearch }) => {
     const [searchTerm, setSearchTerm] = useState('');

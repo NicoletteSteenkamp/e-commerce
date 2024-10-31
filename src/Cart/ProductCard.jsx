@@ -13,14 +13,14 @@ const ProductCard = ({ product }) => {
   );
 };
 
-// Define prop types for better type checking
+
 ProductCard.propTypes = {
   product: PropTypes.shape({
     id: PropTypes.number.isRequired,
     name: PropTypes.string.isRequired,
     price: PropTypes.number.isRequired,
     image: PropTypes.string.isRequired,
-    description: PropTypes.string.isRequired, // Include description
+    description: PropTypes.string.isRequired, 
   }).isRequired,
 };
 

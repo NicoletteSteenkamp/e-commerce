@@ -1,40 +1,26 @@
-import React, { useState } from 'react';
-import Navbar from "./components/navbar";
-import SearchBar from './components/SearchBar';
-import ProductCard from './components/ProductCard';
-import Cart from './components/Cart';
-import { PRODUCTS } from './components/products'; 
-import './App.css';
+import "./App.css";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { Navbar } from "./components/navbar";
+import { Shop } from "./Shop/Shop";
+import { Contact } from "./contact";
+import { Cart } from "./Cart/cart";
+import { ShopContextProvider } from "./Shop/shop-context";
 
-const App = () => {
-  const [filteredProducts, setFilteredProducts] = useState(PRODUCTS); 
-
-  const handleSearch = (term) => {
-    setFilteredProducts(
-      PRODUCTS.filter((product) =>
-        product.productName.toLowerCase().includes(term.toLowerCase())
-      )
-    );
-  };
-
+function App() {
   return (
-    <div className="app">
-      <Navbar />
-      <div className="main-content">
-        <SearchBar onSearch={handleSearch} />
-        <div className="product-list">
-          {filteredProducts.length === 0 ? (
-            <p>No products found</p>
-          ) : (
-            filteredProducts.map((product) => (
-              <ProductCard key={product.id} product={product} />
-            ))
-          )}
-        </div>
-        <Cart />
-      </div>
+    <div className="App">
+      <ShopContextProvider>
+        <Router>
+          <Navbar />
+          <Routes>
+            <Route path="/" element={<Shop />} />
+            <Route path="/contact" element={<Contact />} />
+            <Route path="/cart" element={<Cart />} />
+          </Routes>
+        </Router>
+      </ShopContextProvider>
     </div>
   );
-};
+}
 
 export default App;
