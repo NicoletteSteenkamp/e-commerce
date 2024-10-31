@@ -1,29 +1,30 @@
 .navbar {
   display: flex;
   align-items: center;
-  padding: 10px;
+  padding: 15px;
 }
 
 .navbar-container {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 60px; /* Adjust width as needed */
-  background-color: #f8f8f8; /* Sidebar background color */
+  width: 50px; /* Adjust width as needed */
+  background-color: #e5e5e5; /* Sidebar background color */
   height: 100vh; /* Full height of the viewport */
-  border-right: 1px solid #ddd;
+  border-right: 2px solid #ddd;
 }
 
 .logo-image {
-  width: 40px; /* Adjust logo size as needed */
+  width: 30px; /* Adjust logo size as needed */
   margin-bottom: 20px;
+  margin-top: 20px;
 }
 
 .icon-sidebar {
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 15px; /* Space between icons */
+  gap: 10px; /* Space between icons */
 }
 
 .icon-sidebar svg {

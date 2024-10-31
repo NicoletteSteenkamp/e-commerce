@@ -7,11 +7,11 @@ const SearchBar = ({ onSearch }) => {
 
     const handleChange = (e) => {
         setSearchTerm(e.target.value);
-        onSearch(e.target.value); // Call the onSearch prop to filter products
+        onSearch(e.target.value); 
     };
 
     const handleSubmit = (e) => {
-        e.preventDefault(); // Prevent form submission
+        e.preventDefault();
     };
 
     return (

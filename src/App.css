@@ -1,16 +1,6 @@
-/* App.css */
-.sidebar {
-    width: 200px;
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
-    background-color: #f4f4f4;
-    padding: 1rem;
-  }
-  
-  .search-bar {
-    width: 100%;
+
+.search-bar {
+    width: 30%;
     padding: 0.5rem;
     margin: 1rem 0;
   }
